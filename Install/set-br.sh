@@ -1,5 +1,5 @@
 #!/bin/bash
-repo="https://raw.githubusercontent.com/Tomketstore/tunneling/main/"
+repo="https://raw.githubusercontent.com/fanoraprem/scriptvip/main/"
 apt install rclone
 printf "q\n" | rclone config
 wget -O /root/.config/rclone/rclone.conf "${repo}install/rclone.conf"
