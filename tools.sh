@@ -1,5 +1,5 @@
 #!/bin/bash
-repo="https://raw.githubusercontent.com/Tomketstore/tunneling/main/"
+repo="https://raw.githubusercontent.com/fanoraprem/scriptvip/main/"
 clear
 red='\e[1;31m'
 green2='\e[1;32m'
