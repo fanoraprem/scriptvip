@@ -2,7 +2,7 @@
 dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ###########- COLOR CODE -##############
-repo="https://raw.githubusercontent.com/Tomketstore/tunneling/main/"
+repo="https://raw.githubusercontent.com/fanoraprem/scriptvip/main/"
 colornow=$(cat /etc/rmbl/theme/color.conf)
 NC="\e[0m"
 RED="\033[0;31m"
