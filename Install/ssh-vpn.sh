@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # ==================================================
-repo="https://raw.githubusercontent.com/Tomketstore/tunneling/main/"
+repo="https://raw.githubusercontent.com/fanoraprem/scriptvip/main/"
 # etc
 apt dist-upgrade -y
 apt install netfilter-persistent -y
