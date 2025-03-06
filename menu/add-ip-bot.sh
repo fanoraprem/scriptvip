@@ -30,7 +30,7 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/Tomketstore/iz/main/admin"
+data_ip="https://raw.githubusercontent.com/fanoraprem/iz/main/admin"
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -44,8 +44,8 @@ checking_sc() {
     echo -e "   \033[0;33mVPS KAMU${NC} $ipsaya \033[0;33mBUKAN RESELLER${NC}"
     echo -e "     \033[0;33mBELI LICENCE RESELLER SCRIPT${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mTelegram${NC} t.me/Tomketstore"
-    echo -e "      ${c}WhatsApp${NC} wa.me/62********"
+    echo -e "      \033[0;36mTelegram${NC} t.me/FanoraVpnTunnel"
+    echo -e "      ${c}WhatsApp${NC} wa.me/6285974307436"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     sleep 5
     exit
@@ -54,9 +54,9 @@ checking_sc() {
 checking_sc
 
 TOKEN="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"
-REPO="https://github.com/Tomketstorel/iz.git"
+REPO="https://github.com/fanoraprem/iz.git"
 EMAIL="storetomke@gmail.com"
-USER="Tomketstore"
+USER="FanoraVpnTunnel"
 
 TIMES="10"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
@@ -68,7 +68,7 @@ echo -e "${bc} —————————————————————�
 function LOGO() {
 echo -e ""
 lane
-echo -e "${ungu}           TOMKET TUNNELING            "
+echo -e "${ungu}           FANORA TUNNELING            "
 lane
 echo -e ""
 }
@@ -82,7 +82,7 @@ sleep 1
 echo -e "" 
 lane
 echo -e " ${c}     Terimakasih sudah menggunakan"
-echo -e "     Script Credit by TOMKET TUNNELING${NC}"
+echo -e "     Script Credit by FANORA TUNNELING${NC}"
 lane
 echo -e ""
 exit 0
@@ -137,7 +137,7 @@ TEXT="
 <b>Succes Create this IP</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 5Menit Untuk Server KeRefresh</i>
-<b><i>Terima Kasih Sudah Menggunakan Script By Freetunnel</i></b>
+<b><i>Terima Kasih Sudah Menggunakan Script By fanoratunnel</i></b>
 curl -s --max-time 10 -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null"
 clear
 lane
