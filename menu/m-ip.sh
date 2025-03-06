@@ -5,8 +5,8 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 ipsaya=$(wget -qO- ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/Tomketstore/izin//main/admin"
-reseller=$(curl -sS https://raw.githubusercontent.com/Tomketstore/izin//main/admin | grep $MYIP | awk '{print $2}')
+data_ip="https://raw.githubusercontent.com/fanoraprem/izin//main/admin"
+reseller=$(curl -sS https://raw.githubusercontent.com/fanoraprem/izin//main/admin | grep $MYIP | awk '{print $2}')
 checking_sc() {
   useexp=$(wget -qO- $data_ip | grep $ipsaya | awk '{print $3}')
   if [[ $date_list < $useexp ]]; then
@@ -20,8 +20,8 @@ checking_sc() {
     echo -e "   \033[0;33mYour VPS${NC} $ipsaya \033[0;33mHas been Banned${NC}"
     echo -e "     \033[0;33mBuy access permissions for scripts${NC}"
     echo -e "             \033[0;33mContact Admin :${NC}"
-    echo -e "      \033[0;36mTelegram${NC} t.me/freetunnel1"
-    echo -e "      ${GREEN}WhatsApp${NC} wa.me/6281927625651"
+    echo -e "      \033[0;36mTelegram${NC} t.me/FanoraVpnTunnel"
+    echo -e "      ${GREEN}WhatsApp${NC} wa.me/6285974307436"
     echo -e "\033[1;93m────────────────────────────────────────────\033[0m"
     exit
   fi
@@ -31,7 +31,7 @@ clear
 export MYIP=$( curl -s https://ipinfo.io/ip/ )
 SELLERR=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $2}')
 Exp100=$(curl -sS ${Repo1}ip | grep $MYIP | awk '{print $3}')
-data_ip="https://raw.githubusercontent.com/Tomketstore/izin//main/ip"
+data_ip="https://raw.githubusercontent.com/fanoraprem/izin//main/ip"
 d2=$(date -d "$date_list" +"+%s")
 d1=$(date -d "$Exp" +"+%s")
 dayleft=$(( ($d1 - $d2) / 86400 ))
